@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    perspective: 1000px;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: pink;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 25rem;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2),0 0 50px 0 rgba(0,0,0,0.2);
+}
+
+.sneaker{
+    display: flex;
+    min-height: 35vh;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.sneaker img{
+    width: 40vh;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+
+}
+.circle{
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(245, 70, 66, 0.75),
+        rgba(8, 83, 156, 0.75)
+      );
+   border-radius: 50%;
+   position: absolute;
+   z-index: 1;
+
+}
+.info h1{
+    text-align: center;
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+.info h2{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+
+}
+.sizes{
+    display: flex;
+    justify-content: center;
+
+}
+.sizes button{
+    transition: all 0.75s ease-out;
+    padding: 0.5rem;
+    margin: 2px;
+    width: 20%;
+    background: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5) ;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #585858;
+}
+button.active{
+    background: grey;
+    color: white;
+    transition: all 0.75s ease-out;
+}
+
+.purchase{
+   
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.purchase button{
+    width: 80%;
+    padding: 1rem 0rem;
+    transition: all 0.75s ease-out;
+    background: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+}
+/* dought
+vh ?
+
+
+*/
